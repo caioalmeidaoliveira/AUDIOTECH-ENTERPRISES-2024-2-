@@ -72,7 +72,7 @@ function handleInsurance() {
                 <option value="corporate">Corporativo</option>
             </select>
             <br/><br/>
-            <a href="AT Homepage.html"><button type="submit">Finalizar Pagamento</button></a>
+            <a href="AT Homepage.html"><button type="submit">Marcar Consulta</button></a>
         `;
     } else if (insurance === "other") {
         details.innerHTML = `
@@ -85,7 +85,7 @@ function handleInsurance() {
                 <option value="alice">Alice</option>
             </select>
             <br/><br/>
-            <a href="AT Homepage.html"><button type="submit">Finalizar Pagamento</button></a>
+            <a href="AT Homepage.html"><button type="submit">Marcar Consulta</button></a>
         `;
     } else {
         details.innerHTML = `<h2>Formulário de Pagamento</h2>
