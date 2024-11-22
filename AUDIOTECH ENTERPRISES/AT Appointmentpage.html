@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consulta - AudioTech</title>
+    <link rel="stylesheet" href="CSS/AT Appointmentpage.css">
+    <script src="JAVASCRIPT/AT Appointmentpage.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Agende sua Consulta</h1>
+    </header>
+
+    <main class="container">
+<!-- Escolha da Unidade -->
+<section class="unit-section">
+    <h2>Escolha a Unidade</h2>
+    <div class="form-group">
+        <label for="unit-selector">Selecione:</label>
+        <select id="unit-selector" onchange="showClinicInfo()">
+            <option value="" disabled selected>Selecione uma clínica</option>
+                <option value="clinica1">AC Aparelhos Auditivos – Santo André</option>
+        </select>
+    </div>
+    
+    <!-- Horários Disponíveis -->
+    <div id="available-times" class="times-grid hidden">
+        <h3>Horários Disponíveis</h3>
+        <div id="times-container"></div>
+    </div>
+
+    <!-- Informações da Clínica -->
+    <div id="clinic-info" class="clinic-info hidden">
+        <iframe id="clinic-map" src="" frameborder="0" class="map-frame"></iframe>
+        <div id="clinic-details"></div>
+    </div>
+</section>
+
+        <!-- Questionário -->
+        <section class="questionnaire-section">
+            <h2>Informações do Paciente</h2>
+            <div class="form-group">
+                <label for="dob">Data de Nascimento:</label>
+                <input type="date" id="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Sexo:</label>
+                <select id="gender">
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
+                    <option value="other">Outro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="age">Idade:</label>
+                <input type="number" id="age" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="consult-type">Tipo de Consulta:</label>
+                <select id="consult-type">
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="fono">Consulta inicial com fonoaudiólogo</option>
+                    <option value="triagem">Triagem auditiva básica</option>
+                    <option value="tonal">Audiometria tonal</option>
+                    <option value="vocal">Audiometria vocal</option>
+                    <option value="timpanometria">Timpanometria</option>
+                    <option value="otemissão">Otemissões acústicas</option>
+                    <option value="ajuste">Ajuste de Aparelho</option>
+                    <option value="reabilitacao">Reabilitação Auditiva pós-aparelho</option>
+                    <option value="terapia">Terapia Auditiva</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="insurance-section">
+            <h2>Plano de Saúde</h2>
+            <div class="form-group">
+                <label for="insurance">Você possui plano de saúde?</label>
+                <select id="insurance" onchange="handleInsurance()">
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="audiotech">Plano AudioTech</option>
+                    <option value="other">Outro</option>
+                    <option value="none">Nenhum</option>
+                </select>
+            </div>
+            <div id="insurance-details"></div>
+        </section>
+
+        <!-- Formulário de Pagamento -->
+        <section id="payment-form" class="hidden">
+            <h2>Formulário de Pagamento</h2>
+            <div class="form-group">
+                <label for="card-name">Nome no Cartão</label>
+                <input type="text" id="card-name" placeholder="Nome no cartão" required>
+            </div>
+            <div class="form-group">
+                <label for="card-name">Banco</label>
+                <input type="text" id="card-name" placeholder="Banco" required>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Número do Cartão</label>
+                <input type="text" id="card-number" placeholder="Número do cartão" required>
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Data de Expiração</label>
+                <input type="month" id="expiry-date" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="CVV" required>
+            </div>
+            <a href="AT Homepage.html"><button type="submit">Finalizar Pagamento</button></a>
+        </section>
+
+    <!-- Redes Sociais e Contato -->
+    <section class="contact-section">
+        <h2>Entre em Contato</h2>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/audiotech.enterprises_oficial/profilecard/?ighs=MThtdm9wdmgxd2Z1Yw==" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://w.app/audiotechenterprises" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p class="whatsapp">WhatsApp: <a href="https://w.app/audiotechenterprises">+55 11 97862-0437</a></p>
+    </section>
+    </main>
+</body>
+</html>

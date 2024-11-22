@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - AudioTech</title>
+    <link rel="stylesheet" href="CSS/paycheck.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="payment-container">
+        <br/><br/>
+        <h1>Pagamento</h1>
+        <p>Escolha o método de pagamento e insira as informações necessárias.</p>
+
+        <!-- Seleção de métodos de pagamento -->
+        <div class="payment-method">
+            <h2>Formas de Pagamento</h2>
+            <div class="payment-options">
+                <div class="option" data-payment="credit-card">
+                    <i class="fas fa-credit-card"></i>
+                    <p>Cartão de Crédito</p>
+                </div>
+                <div class="option" data-payment="debit-card">
+                    <i class="fas fa-credit-card"></i>
+                    <p>Cartão de Débito</p>
+                </div>
+                <div class="option" data-payment="pix">
+                    <i class="fas fa-qrcode"></i>
+                    <p>PIX</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulário de pagamento com cartão -->
+        <div id="card-info">
+            <form>
+                <label for="card-number">
+                    <i class="fas fa-credit-card"></i> Número do Cartão:
+                </label>
+                <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX" required>
+
+                <label for="card-name">
+                    <i class="fas fa-user"></i> Nome no Cartão:
+                </label>
+                <input type="text" id="card-name" placeholder="Nome completo" required>
+
+                <label for="card-expiry">
+                    <i class="fas fa-calendar-alt"></i> Validade:
+                </label>
+                <input type="month" id="card-expiry" required>
+
+                <label for="card-cvv">
+                    <i class="fas fa-key"></i> CVV:
+                </label>
+                <input type="text" id="card-cvv" placeholder="XXX" required>
+
+                <button type="submit">Finalizar Pagamento</button>
+            </form>
+        </div>
+
+        <!-- Informações do PIX -->
+        <div id="pix-info" class="hidden">
+            <h3>Pagamento via PIX</h3>
+            <p>Escaneie o QR Code abaixo ou use as informações:</p>
+            <div id="qrcode">
+                <img src="Assets AudioTech/qr_code_image_300_x_300.png">
+            </div>
+            <div class="pix-details">
+                <p><strong>E-mail:</strong> pix@audiotech.com</p>
+                <p><strong>CPF:</strong> 123.456.789-00</p>
+                <br/>
+                <a href="AT productpage.html"><button type="submit">Finalizar Pagamento</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="JAVASCRIPT/paycheck.js"></script>
+</body>
+</html>

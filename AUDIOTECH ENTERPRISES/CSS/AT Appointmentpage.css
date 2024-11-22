@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    font-family: 'Poppins';
+}
+
+/* Header */
+.header {
+    background: transparent;
+    color: #24344d;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+}
+
+/* Section Titles */
+h2 {
+    color: #28262c;
+    font-size: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Map Section */
+.map-frame {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Redes Sociais */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.social-icon {
+    color: #686c74;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #28262c;
+}
+
+/* Estilo para Horários */
+.times-grid {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.times-grid h3 {
+    color: #24344d;
+    margin-bottom: 15px;
+}
+
+#times-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.time-slot {
+    background: #686c74;
+    color: white;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: background 0.3s;
+}
+
+.time-slot i {
+    color: white;
+    font-size: 16px;
+}
+
+.time-slot:hover {
+    background: #28262c;
+}
+
+/* Estilo para o horário selecionado */
+.time-slot.selected {
+    background: #859dbe;
+    color: #fff;
+    border: 2px solid #859dbe;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(94, 94, 94, 0.5);
+}
+
+/* Formulário de pagamento */
+#payment-form {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#payment-form.hidden {
+    display: none;
+}
+
+#payment-form .form-group {
+    margin-bottom: 15px;
+}
+
+#payment-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 9px;
+    font-size: 1.0rem;
+    color: #fff;
+    background: #1a4d8f;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Poppins';
+    align-items: center;
+  }
+  
+  button:hover {
+    background: #163a6b;
+  }
+

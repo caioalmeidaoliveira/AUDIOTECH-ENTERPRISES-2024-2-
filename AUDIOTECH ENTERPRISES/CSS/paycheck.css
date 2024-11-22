@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+
+/* Estilização geral */
+body {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.payment-container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  padding: 80px;
+  text-align: center;
+}
+
+.payment-container h1 {
+  color: #1a4d8f;
+}
+
+/* Esconde o formulário de pagamento inicialmente ao selecionar PIX */
+.hidden {
+  display: none;
+}
+
+
+.payment-method h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.payment-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.option {
+  width: 120px;
+  height: 120px;
+  background: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.option i {
+  font-size: 2rem;
+  color: #1a4d8f;
+  margin-bottom: 10px;
+}
+
+.option p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.option:hover,
+.option.active {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-color: #1a4d8f;
+}
+
+/* Estilização do formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #333;
+}
+
+label i {
+  margin-right: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #1a4d8f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #163a6b;
+}
+
+#pix-info {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+#pix-info.hidden {
+  display: none;
+}
+
+#qrcode {
+  margin: 20px auto;
+}
+
+.pix-details p {
+  margin: 5px 0;
+  font-size: 1rem;
+}

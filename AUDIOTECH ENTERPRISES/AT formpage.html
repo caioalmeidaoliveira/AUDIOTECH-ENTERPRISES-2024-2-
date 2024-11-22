@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação Auditiva - AudioTech</title>
+    <link rel="stylesheet" href="CSS/formpage.css">
+</head>
+<body>
+    <div class="container">
+        <a class="prev" href="AT homepage.html">
+            <span>&#10094;</span>
+            <span class="prev-text">Voltar</span>
+        </a>
+
+        <br/>
+        
+        <h1>Formulário de Avaliação Auditiva</h1>
+        <p>Preencha o formulário abaixo para que possamos entender melhor suas necessidades auditivas.</p>
+        <form id="avaliacaoForm">
+            <!-- Seção de Informações Pessoais -->
+            <div class="form-section">
+                <h2><i class="fas fa-user"></i> Informações Pessoais</h2>
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" name="idade" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+
+            <!-- Seção de Perguntas Específicas -->
+            <div class="form-section">
+                <h2><i class="fas fa-ear"></i> Avaliação de Saúde Auditiva</h2>
+
+                <div class="question">
+                    <label for="historicoFamiliar">Você possui histórico familiar de perda auditiva?</label>
+                    <select id="historicoFamiliar" name="historicoFamiliar" required>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="exposicaoRuido">Você frequentemente é exposto a ruídos altos?</label>
+                    <select id="exposicaoRuido" name="exposicaoRuido" required>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="dificuldadeOuvir">Sente dificuldade para ouvir em ambientes com ruído?</label>
+                    <select id="dificuldadeOuvir" name="dificuldadeOuvir" required>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="zumbido">Você escuta zumbidos nos ouvidos?</label>
+                    <select id="zumbido" name="zumbido" required>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="infeccoesOuvido">Já teve infecções frequentes no ouvido?</label>
+                    <select id="infeccoesOuvido" name="infeccoesOuvido" required>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="doencaCronica">Possui alguma doença crônica que afete a audição (diabetes, hipertensão, etc.)?</label>
+                    <select id="doencaCronica" name="doencaCronica" required>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="aumentarVolume">Você precisa aumentar o volume da TV para ouvir claramente?</label>
+                    <select id="aumentarVolume" name="aumentarVolume" required>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="dorOuvido">Você sente dor nos ouvidos com frequência?</label>
+                    <select id="dorOuvido" name="dorOuvido" required>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="perdaAuditiva">Percebeu perda auditiva gradual ao longo do tempo?</label>
+                    <select id="perdaAuditiva" name="perdaAuditiva" required>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="consultaAnterior">Já fez consultas auditivas anteriores?</label>
+                    <select id="consultaAnterior" name="consultaAnterior" required>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="aparelhoAuditivo">Você utiliza aparelho auditivo?</label>
+                    <select id="aparelhoAuditivo" name="aparelhoAuditivo" required>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="consultaUrgente">Esta consulta é urgente?</label>
+                    <select id="consultaUrgente" name="consultaUrgente" required>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="habitosSaudaveis">Você mantém hábitos saudáveis (exercícios, alimentação)?</label>
+                    <select id="habitosSaudaveis" name="habitosSaudaveis" required>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="problemaEquilibrio">Já sentiu tonturas ou problemas de equilíbrio?</label>
+                    <select id="problemaEquilibrio" name="problemaEquilibrio" required>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="tratamentoAnterior">Já fez algum tratamento auditivo?</label>
+                    <select id="tratamentoAnterior" name="tratamentoAnterior" required>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Botão de Envio -->
+            <button type="submit">Enviar Formulário</button>
+        </form>
+    </div>
+
+    <!-- FontAwesome para ícones -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="JAVASCRIPT/formpage.js"></script>
+</body>
+</html>

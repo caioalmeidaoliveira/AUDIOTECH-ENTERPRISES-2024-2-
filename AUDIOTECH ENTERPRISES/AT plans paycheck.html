@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pagamento - AudioTech</title>
+    <link rel="stylesheet" href="CSS/AT planspage.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="payment-section">
+            <!-- Seção de seleção de plano -->
+            <div class="form-container">
+                <h3>Escolha seu plano</h3>
+                <form id="paymentForm">
+                    <div class="plans">
+                        <label>
+                            <input type="radio" name="plan" value="basico" checked>
+                            <div class="plan-card">
+                                <h3>Plano Básico</h3>
+                                <p>R$ 29,90/mês</p>
+                                <small>10% de desconto em consultas e mais</small>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="plan" value="intermediario">
+                            <div class="plan-card">
+                                <h3>Plano Intermediário</h3>
+                                <p>R$ 59,90/mês</p>
+                                <small>20% de desconto + teleconsultas</small>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="plan" value="premium">
+                            <div class="plan-card">
+                                <h3>Plano Premium</h3>
+                                <p>R$ 99,90/mês</p>
+                                <small>30% de desconto + teleconsultas ilimitadas</small>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="plan" value="familia">
+                            <div class="plan-card">
+                                <h3>Plano Família</h3>
+                                <p>R$ 59,90/mês</p>
+                                <small>20% de desconto + teleconsultas</small>
+                            </div>
+                        </label>
+                        <label>
+                            <input type="radio" name="plan" value="corporativo">
+                            <div class="plan-card">
+                                <h3>Plano Corporativo</h3>
+                                <p>R$ 59,90/mês</p>
+                                <small>20% de desconto + teleconsultas</small>
+                            </div>
+                        </label>
+                    </div>
+
+                    <section id="form-section" style="display: none;">
+                        <form id="subscription-form">
+                          <!-- Formulário dinâmico será injetado aqui -->
+                          <button type="submit">Realizar Pagamento</button>
+                        </form>
+                    </section>
+                    
+                    <h2>Informações de Pagamento</h2>
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="cardNumber">Número do Cartão:</label>
+                    <input type="text" id="cardNumber" name="cardNumber" placeholder="XXXX XXXX XXXX XXXX" maxlength="16" required>
+                    
+                    <label for="name">Banco:</label>
+                    <input type="text" id="name" name="name" placeholder="Banco" required>
+
+                    <label for="expiry">Data de Validade:</label>
+                    <input type="text" id="expiry" name="expiry" placeholder="MM/AA" maxlength="5" required>
+                    
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" maxlength="3" required>
+                    
+                    <a href="AT Homepage.html"><button type="submit">Assinar Agora</button></a>
+                </form>
+            </div>
+        </div>
+
+        <!-- Seção de resumo lateral -->
+        <div class="summary-section">
+            <div class="summary-card">
+                <h2>Resumo do Plano</h2>
+                <p id="planSummary">Plano Básico - R$ 29,90/mês</p>
+                <ul>
+                    <li>Desconto em consultas: 10%</li>
+                    <li>Acesso prioritário ao agendamento</li>
+                    <li>Descontos em aparelhos auditivos</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="JAVASCRIPT/AT planspage.js"></script>
+</body>
+</html>
