@@ -23,7 +23,7 @@ body {
 }
 
 .payment-container h1 {
-  color: #1a4d8f;
+  color: #24344d;
 }
 
 /* Esconde o formulário de pagamento inicialmente ao selecionar PIX */
@@ -58,7 +58,7 @@ body {
 
 .option i {
   font-size: 2rem;
-  color: #1a4d8f;
+  color: #28262c;
   margin-bottom: 10px;
 }
 
@@ -71,7 +71,7 @@ body {
 .option.active {
   transform: scale(1.1);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  border-color: #1a4d8f;
+  border-color: #28262c;
 }
 
 /* Estilização do formulário */
@@ -104,14 +104,14 @@ button {
   padding: 10px;
   font-size: 1.2rem;
   color: #fff;
-  background: #1a4d8f;
+  background: #686c74;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background: #163a6b;
+  background: #28262c;
 }
 
 #pix-info {
